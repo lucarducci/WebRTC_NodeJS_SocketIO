@@ -1,4 +1,11 @@
-- To start
+## Install
 
+```
 npm i
+```
+
+## Start
+
+```
 npm run dev
+```

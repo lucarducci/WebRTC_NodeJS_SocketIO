@@ -8,7 +8,6 @@ const { RTCPeerConnection, RTCSessionDescription } = window;
 const peerConnection = new RTCPeerConnection();
 
 peerConnection.ontrack = function ({ streams: [stream] }) {
-  console.log(" on track");
   const remoteVideo = document.getElementById("remote-video");
   if (remoteVideo) {
     remoteVideo.srcObject = stream;
